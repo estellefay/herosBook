@@ -1,2 +1,4 @@
-<?php 
-include ('views/base.php');
+<?php   
+
+     include('views/base.php'); 
+ 

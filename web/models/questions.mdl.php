@@ -1,4 +1,5 @@
 <?php
+
 $questions = array(
     0 => array(
         "question" =>"Vous arrivez devant l'entrée de l'etoile de la mort, deux portes se présentent à vous, laquelle choisissez-vous ?",
@@ -15,7 +16,7 @@ $questions = array(
 ),
 
     1 => array(
-        "question" =>"VOus tombez nez à nez avec un stormstrooper ",
+        "question" =>"Vous tombez nez à nez avec un chien vous sortée votre"." ".$_SESSION['equipement'],
         "answers"  => array(
             array(
                 "answer" => "Je sors mon sabre laser",
