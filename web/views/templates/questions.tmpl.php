@@ -17,3 +17,10 @@
         <?php endforeach; ?>
     </fieldset>
 </section>
+
+<?php 
+if (!isset($_SESSION['question'])) { 
+    $_SESSION['question'] = array();
+} 
+$_SESSION['question'][] = $_GET['question'];
+?>
