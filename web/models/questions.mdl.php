@@ -16,7 +16,7 @@ $questions = array(
 ),
 
     1 => array(
-        "question" =>"Vous tombez nez à nez avec un chien vous sortée votre"." ".$_SESSION['equipement'],
+        "question" =>"Vous tombez nez à nez avec un chien vous sortée votre",
         "answers"  => array(
             array(
                 "answer" => "Je sors mon sabre laser",
@@ -24,7 +24,7 @@ $questions = array(
             ),
             array(
                 "answer" => "Ce ne sont pas les druides que vous recherchez",
-                "action" => 0
+                "action" => 4
             )
         )
  ),
@@ -38,11 +38,44 @@ $questions = array(
             ),
             array(
                 "answer" => "Je lui dit que sa ne m'intéresse pas ",
-                "action" => 0
+                "action" => 3
             ),
             array(
                 "answer" => "Je laisse WIssem de lui parler de PHP et je lui dérobe sont épé ",
+                "action" => 4
+            )
+
+        )
+    ),
+
+
+    3 => array(
+        "question" =>"Tu as perdu ton epée",
+        "answers"  => array(
+            array(
+                "answer" => "Je lui propose 10 euro",
+                "action" => 1
+            ),
+            array(
+                "answer" => "Je lui dit que sa ne m'intéresse pas ",
                 "action" => 0
+            ),
+
+
+        )
+    ),
+
+
+    4 => array(
+        "question" =>"tu voie un dragon",
+        "answers"  => array(
+            array(
+                "answer" => "tu cours",
+                "action" => 1
+            ),
+            array(
+                "answer" => "tu plonge ",
+                "action" => 2
             )
 
         )

@@ -11,9 +11,11 @@ if(isset($_GET['action']) && $_GET['action'] == 'logoff') {
  //start my session
 // Enregistrer toutes mes informations
 if (isset($_POST['username']) && isset($_POST['equipement']) && isset($_POST['food'])) {
-    $_SESSION['username'] = $_POST['username'];
-    $_SESSION['equipement'] = $_POST['equipement'];
-    $_SESSION['food'] = $_POST['food'];
+    $_SESSION['players_1']['username'] = $_POST['username'];
+    $_SESSION['players_1']['equipement'] = $_POST['equipement'];
+    $_SESSION['players_1']['food'] = $_POST['food'];
+    $_SESSION['players_1']['PDV'] = 500;
+
 }
 
 ?>

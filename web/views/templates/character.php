@@ -2,18 +2,14 @@
 
 <?php
 
-
-
-
-
 //aficher mes variable en mode travail
 var_dump($_SESSION);
 
-$listFood = $_SESSION['food'];
+$listFood = $_SESSION['players_1']['food'];
 
 
-if (isset($_SESSION['username']) && isset($_SESSION['equipement']) && isset($_SESSION['food'])) {
-    echo 'Hello your name is '.$_SESSION['username'].' and you equipment is '.$_SESSION['equipement'];
+if (isset($_SESSION['players_1']['username']) && isset($_SESSION['players_1']['equipement']) && isset($_SESSION['players_1']['food'])) {
+    echo 'Hello your name is '.$_SESSION['players_1']['username'].' and you equipment is '.$_SESSION['players_1']['equipement'];
     echo ' You have';
     foreach ($listFood as $food) {
     echo ('<br>');
